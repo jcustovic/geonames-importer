@@ -1,0 +1,15 @@
+spring:
+  datasource:  
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/nuts
+    username: postgres
+    password: pass
+    hikari:
+      maximum-pool-size: 5
+      connection-test-query: SELECT 1
+    platform: postgres
+    initialization-mode: never
+  jpa:
+    properties: 
+      hibernate:
+        dialect: org.hibernate.spatial.dialect.postgis.PostgisPG95Dialect
