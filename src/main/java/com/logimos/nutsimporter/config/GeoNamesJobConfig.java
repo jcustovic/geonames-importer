@@ -1,10 +1,7 @@
 package com.logimos.nutsimporter.config;
 
 import com.logimos.nutsimporter.domain.geonames.model.GeoNamesPostalCode;
-import com.logimos.nutsimporter.infrastructure.batch.GeoNamesPostalCodeReader;
-import com.logimos.nutsimporter.infrastructure.batch.GeoNamesPostalCodeWriter;
-import com.logimos.nutsimporter.infrastructure.batch.GeoNamesReader;
-import com.logimos.nutsimporter.infrastructure.batch.GeoNamesWriter;
+import com.logimos.nutsimporter.infrastructure.batch.*;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
@@ -25,6 +22,24 @@ public class GeoNamesJobConfig {
     private StepBuilderFactory stepBuilderFactory;
 
     @Bean
+    public Job lauImporterJob() {
+        return jobBuilderFactory.get("lauImporterJob")
+                .start(lauImporterStep(null, null))
+                .preventRestart()
+                .build();
+    }
+
+    @Bean
+    public Step lauImporterStep(LauReader reader, LauWriter writer) {
+        return stepBuilderFactory.get("lauImporterStep")
+                .<FieldSet, FieldSet>chunk(1000)
+                //.faultTolerant().skip(Exception.class).skipLimit(0)
+                .reader(reader)
+                .writer(writer)
+                .build();
+    }
+
+    @Bean
     public Job geonamesImporterJob() {
         return jobBuilderFactory.get("geonamesImporterJob")
                 .start(geonamesImporterStep(null, null))
@@ -36,7 +51,6 @@ public class GeoNamesJobConfig {
     public Step geonamesImporterStep(GeoNamesReader reader, GeoNamesWriter writer) {
         return stepBuilderFactory.get("geonamesImporterStep")
                 .<FieldSet, FieldSet>chunk(1000)
-                .faultTolerant().skip(Exception.class).skipLimit(0)
                 .reader(reader)
                 .writer(writer)
                 .build();
@@ -54,7 +68,6 @@ public class GeoNamesJobConfig {
     public Step geonamesPostalCodeImporterStep(GeoNamesPostalCodeReader reader, GeoNamesPostalCodeWriter writer) {
         return stepBuilderFactory.get("geonamesPostalCodeImporterStep")
                 .<GeoNamesPostalCode, GeoNamesPostalCode>chunk(1000)
-                .faultTolerant().skip(Exception.class).skipLimit(0)
                 .reader(reader)
                 .writer(writer)
                 .build();

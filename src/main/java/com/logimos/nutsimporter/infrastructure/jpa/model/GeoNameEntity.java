@@ -1,7 +1,6 @@
 package com.logimos.nutsimporter.infrastructure.jpa.model;
 
 import com.vividsolutions.jts.geom.Point;
-import org.hibernate.annotations.Type;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

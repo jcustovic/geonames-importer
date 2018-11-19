@@ -24,10 +24,12 @@ spring:
       hibernate:
         dialect: org.hibernate.spatial.dialect.h2geodb.GeoDBDialect
     show-sql: false
+    open-in-view: false
 
 app:
   nuts:
     data-dir: classpath:data/shapefiles
+    lau-csv-dir: classpath:data/nuts/lau
   geonames:
     data-dir: file://D:/Temp/GeoNames
     postal-code-data-dir: file://D:/Temp/GeoNames/PostalCodes

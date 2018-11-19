@@ -1,7 +1,7 @@
 package com.logimos.nutsimporter.infrastructure.batch;
 
 import com.logimos.nutsimporter.infrastructure.jpa.model.GeoNameEntity;
-import com.logimos.nutsimporter.infrastructure.jpa.repository.GeoNameJpaRepository;
+import com.logimos.nutsimporter.infrastructure.jpa.repository.jpa.GeoNameJpaRepository;
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.GeometryFactory;
 import com.vividsolutions.jts.geom.Point;
@@ -24,8 +24,8 @@ public class GeoNamesWriter implements ItemWriter<FieldSet> {
     private GeoNameJpaRepository jpaRepository;
 
     @Override
-    public void write(List<? extends FieldSet> geonameLine) {
-        geonameLine.forEach(g -> {
+    public void write(List<? extends FieldSet> geonameLines) {
+        geonameLines.forEach(g -> {
             String countryCode = g.readString("countryCode");
             String name = g.readString("name");
             boolean ignore = shouldIgnoreCountrySpecific(name, countryCode);

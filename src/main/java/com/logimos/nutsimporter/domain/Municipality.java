@@ -12,6 +12,10 @@ public class Municipality {
         this.nutsCode = nutsCode;
     }
 
+    public Municipality(String name) {
+        this.name = name;
+    }
+
     public Long getId() {
         return id;
     }

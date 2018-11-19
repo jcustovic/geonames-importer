@@ -21,40 +21,40 @@ import java.io.IOException;
 import static java.lang.System.currentTimeMillis;
 
 @Component
-@Order(3)
-public class GeoNamesPostalCodeRunner implements CommandLineRunner {
+@Order(1)
+public class NutsLauRunner implements CommandLineRunner {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(GeoNamesPostalCodeRunner.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(NutsLauRunner.class);
 
-    private final Resource geoNamesPostalCodeDir;
+    private final Resource nutsLauDataDir;
     private final JobLauncher jobLauncher;
-    private final Job geonamesPostalCodeImporterJob;
+    private final Job lauImporterJob;
 
-    public GeoNamesPostalCodeRunner(@Value("${app.geonames.postal-code-data-dir}") Resource geoNamesPostalCodeDir,
-                                    JobLauncher jobLauncher, Job geonamesPostalCodeImporterJob) {
-        this.geoNamesPostalCodeDir = geoNamesPostalCodeDir;
+    public NutsLauRunner(@Value("${app.nuts.lau-csv-dir}") Resource nutsLauDataDir, JobLauncher jobLauncher,
+                         Job lauImporterJob) {
+        this.nutsLauDataDir = nutsLauDataDir;
         this.jobLauncher = jobLauncher;
-        this.geonamesPostalCodeImporterJob = geonamesPostalCodeImporterJob;
+        this.lauImporterJob = lauImporterJob;
     }
 
     @Override
     public void run(String... args) throws IOException, JobParametersInvalidException, JobExecutionAlreadyRunningException,
             JobRestartException, JobInstanceAlreadyCompleteException {
-        if (geoNamesPostalCodeDir.exists()) {
-            File[] files = geoNamesPostalCodeDir.getFile().listFiles((dir, filename) -> filename.endsWith(".txt"));
+        if (nutsLauDataDir.exists()) {
+            File[] files = nutsLauDataDir.getFile().listFiles((dir, filename) -> filename.endsWith(".csv"));
             if (files == null || files.length == 0) {
-                LOGGER.warn("GeoNames postal code dir is empry. No files to process");
+                LOGGER.warn("NUTS LAU data dir is empty. No files to process");
             } else {
                 for (File file : files)
-                    jobLauncher.run(geonamesPostalCodeImporterJob,
+                    jobLauncher.run(lauImporterJob,
                             new JobParametersBuilder()
                                     .addLong("run.id", currentTimeMillis())
-                                    .addString("geonames.postal-code.file", "file:/" + file.getAbsolutePath(), false)
+                                    .addString("nuts.lau.file", "file:/" + file.getAbsolutePath(), false)
                                     .toJobParameters()
                     );
             }
         } else {
-            LOGGER.warn("GeoNames postal code dir does not exist");
+            LOGGER.warn("NUTS LAU data dir does not exist");
         }
     }
 

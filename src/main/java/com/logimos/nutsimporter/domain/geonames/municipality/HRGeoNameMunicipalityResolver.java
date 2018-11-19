@@ -1,47 +1,50 @@
-package com.logimos.nutsimporter.infrastructure.repository;
+package com.logimos.nutsimporter.domain.geonames.municipality;
 
+import com.logimos.nutsimporter.domain.Municipality;
 import com.logimos.nutsimporter.domain.geonames.model.GeoNamesPostalCode;
 import com.logimos.nutsimporter.infrastructure.jpa.model.GeoNameEntity;
-import com.logimos.nutsimporter.infrastructure.jpa.repository.GeoNameJpaRepository;
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.GeometryFactory;
+import com.logimos.nutsimporter.infrastructure.jpa.repository.jpa.GeoNameJpaRepository;
 import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.geom.PrecisionModel;
 import cz.jirutka.unidecode.Unidecode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@Repository
-public class GeoNameRepository {
+@Component
+public class HRGeoNameMunicipalityResolver implements GeoNameMunicipalityResolver {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(GeoNameRepository.class);
-    private static final GeometryFactory GF = new GeometryFactory(new PrecisionModel(PrecisionModel.FLOATING), 4326);
+    private static final Logger LOGGER = LoggerFactory.getLogger(HRGeoNameMunicipalityResolver.class);
+
+    private static final String MINIMAL_ADMIN_LVL = "ADM2";
 
     private final GeoNameJpaRepository jpaRepository;
 
-    public GeoNameRepository(GeoNameJpaRepository jpaRepository) {
+    public HRGeoNameMunicipalityResolver(GeoNameJpaRepository jpaRepository) {
         this.jpaRepository = jpaRepository;
     }
 
-    public GeoNameEntity findMunicipalityForPostalCode(GeoNamesPostalCode geoName) {
+    @Override
+    public boolean canResolve(String countryCodeIso2) {
+        return "HR".equals(countryCodeIso2);
+    }
+
+    @Override
+    public Municipality resolveMunicipality(GeoNamesPostalCode geoName, Point point) {
         String countryCode = geoName.getCountryIso2();
-        Point point = GF.createPoint(new Coordinate(geoName.getLongitude().doubleValue(), geoName.getLatitude().doubleValue()));
-        String placeName = getPlaceName(geoName);
+        String placeName = geoName.getPlaceName();
         String placeNameAscii = Unidecode.toAscii().decode(placeName);
 
-        // TODO: Different for different countries
-        String parentPlace = getParentPlace(geoName);
+        String parentPlace = geoName.getAdminName3();
         String parentPlaceAscii = Unidecode.toAscii().decode(parentPlace);
 
-        List<GeoNameEntity> results = jpaRepository.findByNameWithinDistance(countryCode, parentPlace, parentPlaceAscii, point);
+        List<GeoNameEntity> results = jpaRepository.findByNameWithinDistance(countryCode, parentPlace, parentPlaceAscii, MINIMAL_ADMIN_LVL, point);
         if (results.isEmpty()) {
-            results = jpaRepository.findByNameWithinDistance(countryCode, placeName, placeNameAscii, point);
+            results = jpaRepository.findByNameWithinDistance(countryCode, placeName, placeNameAscii, MINIMAL_ADMIN_LVL, point);
         }
         GeoNameEntity place = null;
         if (results.isEmpty()) {
@@ -62,7 +65,7 @@ public class GeoNameRepository {
             place = results.get(0);
         }
         if (place == null) {
-            List<GeoNameEntity> adminAreas = jpaRepository.findClosestAdminAreas(countryCode, point);
+            List<GeoNameEntity> adminAreas = jpaRepository.findClosestAdminAreas(countryCode, MINIMAL_ADMIN_LVL, point);
             if (adminAreas.isEmpty()) {
                 LOGGER.info("Cannot find closest admin area for {}", geoName);
             } else if (adminAreas.size() > 1) {
@@ -78,29 +81,11 @@ public class GeoNameRepository {
             if (municipality == null) {
                 LOGGER.info("Municipality not found for {}", geoName);
             } else {
-                return municipality;
+                return new Municipality(municipality.getName());
             }
         }
 
         return null;
-    }
-
-    private String getParentPlace(GeoNamesPostalCode geoName) {
-        switch (geoName.getCountryIso2()) {
-            case "DE":
-                return geoName.getPlaceName();
-        }
-        
-        return geoName.getAdminName3();
-    }
-
-    private String getPlaceName(GeoNamesPostalCode geoName) {
-        switch (geoName.getCountryIso2()) {
-            case "DE":
-                return geoName.getAdminName1();
-        }
-
-        return geoName.getPlaceName();
     }
 
     private GeoNameEntity findMunicipality(GeoNameEntity place) {
@@ -124,6 +109,10 @@ public class GeoNameRepository {
 
     private GeoNameEntity findFirstAdminAdreasForFips(GeoNameEntity place) {
         // TODO: Maybe look better and not just take 1st
-        return jpaRepository.findAdminAreasForFips(place.getCountryCodeIso2(), place.getFipsCode()).get(0);
+        if (StringUtils.hasText(place.getFipsCode())) {
+            return jpaRepository.findAdminAreasByFips(place.getCountryCodeIso2(), place.getFipsCode(), MINIMAL_ADMIN_LVL).get(0);
+        } else {
+            return jpaRepository.findClosestAdminAreas(place.getCountryCodeIso2(), MINIMAL_ADMIN_LVL, place.getLocation()).get(0);
+        }
     }
 }
