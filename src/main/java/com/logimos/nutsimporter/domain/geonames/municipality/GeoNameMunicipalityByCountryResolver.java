@@ -27,11 +27,13 @@ public class GeoNameMunicipalityByCountryResolver {
     }
 
     public Municipality findMunicipalityForPostalCode(GeoNamesPostalCode geoName) {
-        String countryCode = geoName.getCountryIso2();
         Point point = GF.createPoint(new Coordinate(geoName.getLongitude().doubleValue(), geoName.getLatitude().doubleValue()));
 
+        String countryCode = geoName.getCountryIso2();
+        String placeName = geoName.getPlaceName().split(",")[0];
+
         return resolvers.stream().filter(r -> r.canResolve(countryCode)).findFirst().orElse(NO_RESOLVER)
-                .resolveMunicipality(geoName, point);
+                .resolveMunicipality(countryCode, placeName, point);
     }
 
     static class NoResolverGeoName implements GeoNameMunicipalityResolver {
@@ -42,8 +44,8 @@ public class GeoNameMunicipalityByCountryResolver {
         }
 
         @Override
-        public Municipality resolveMunicipality(GeoNamesPostalCode geoName, Point point) {
-            LOGGER.warn("No resolver found for {}", geoName);
+        public Municipality resolveMunicipality(String countryCode, String placeName, Point point) {
+            LOGGER.warn("No resolver found for {}", placeName);
             return null;
         }
     }

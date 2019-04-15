@@ -34,6 +34,11 @@ public class HRGeoNameMunicipalityResolver implements GeoNameMunicipalityResolve
     }
 
     @Override
+    public Municipality resolveMunicipality(String countryCode, String placeName, Point point) {
+        return null;
+    }
+
+    //@Override
     public Municipality resolveMunicipality(GeoNamesPostalCode geoName, Point point) {
         String countryCode = geoName.getCountryIso2();
         String placeName = geoName.getPlaceName();

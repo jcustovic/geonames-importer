@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 
 import java.sql.PreparedStatement;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @Component
 public class GeoNamesPostalCodeWriter implements ItemWriter<GeoNamesPostalCode> {
@@ -47,12 +48,18 @@ public class GeoNamesPostalCodeWriter implements ItemWriter<GeoNamesPostalCode> 
 
     @Override
     public void write(List<? extends GeoNamesPostalCode> geoNames) {
+        AtomicInteger failedCount = new AtomicInteger();
         geoNames.forEach(g -> {
             Municipality municipality = geoNameMunicipalityByCountryResolver.findMunicipalityForPostalCode(g);
-            Long pcId = getOrCreatePostalCode(g, municipality);
-            createUpdateCityAndLinkPostal(g, pcId, municipality);
+            if (municipality == null) {
+                LOGGER.error("Municipality not found for {}", g);
+                failedCount.getAndIncrement();
+            } else {
+                Long pcId = getOrCreatePostalCode(g, municipality);
+                createUpdateCityAndLinkPostal(g, pcId, municipality);
+            }
         });
-        LOGGER.info("Processed {}", geoNames.size());
+        LOGGER.info("Processed {} (Failed: {})", geoNames.size(), failedCount.intValue());
     }
 
     private void createUpdateCityAndLinkPostal(GeoNamesPostalCode geoName, Long postalCodeId, Municipality municipality) {

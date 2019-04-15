@@ -19,9 +19,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-public class DEGeoNameMunicipalityResolver implements GeoNameMunicipalityResolver {
+public class GBGeoNameMunicipalityResolver implements GeoNameMunicipalityResolver {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(DEGeoNameMunicipalityResolver.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(GBGeoNameMunicipalityResolver.class);
 
     private static final String LOWEST_ADMIN_LVL = "ADM4";
 
@@ -29,7 +29,7 @@ public class DEGeoNameMunicipalityResolver implements GeoNameMunicipalityResolve
     private final MunicipalityJpaRepository municipalityJpaRepository;
     private final NutsRepository nutsRepository;
 
-    public DEGeoNameMunicipalityResolver(GeoNameJpaRepository jpaRepository, MunicipalityJpaRepository municipalityJpaRepository,
+    public GBGeoNameMunicipalityResolver(GeoNameJpaRepository jpaRepository, MunicipalityJpaRepository municipalityJpaRepository,
                                          NutsRepository nutsRepository) {
         this.jpaRepository = jpaRepository;
         this.municipalityJpaRepository = municipalityJpaRepository;
@@ -38,7 +38,7 @@ public class DEGeoNameMunicipalityResolver implements GeoNameMunicipalityResolve
 
     @Override
     public boolean canResolve(String countryCodeIso2) {
-        return "DE".equals(countryCodeIso2);
+        return "GB".equals(countryCodeIso2);
     }
 
     @Override
@@ -72,13 +72,13 @@ public class DEGeoNameMunicipalityResolver implements GeoNameMunicipalityResolve
         }
 
         if (results.isEmpty()) {
-            LOGGER.warn("Place not found for {}.", placeName);
+            LOGGER.error("Place not found for {}.", placeName);
         } else {
             // In case that the result contains 2 entries it is probably because place is PPL and ADM so doesn't matter which we take
             GeoNameEntity place = results.get(0);
             results = jpaRepository.findAdminAreasByAdminCode(place.getCountryCodeIso2(), place.getAdmin4Code(), LOWEST_ADMIN_LVL);
             if (results.isEmpty()) {
-                LOGGER.warn("Admin area not found for {}", placeName);
+                LOGGER.error("Admin area not found for {}", placeName);
             } else {
                 GeoNameEntity adminArea = results.get(0);
                 municipality = resolveMunicipality(adminArea.getCountryCodeIso2(), adminArea.getName(), adminArea.getLocation());
@@ -124,9 +124,9 @@ public class DEGeoNameMunicipalityResolver implements GeoNameMunicipalityResolve
                     return lowerCasePlaceName.contains(lowerCaseName) || lowerCaseName.contains(lowerCasePlaceName);
                 }).findFirst().map(this::map)
                 .orElse(municipalities.stream()
-                        .map(m -> new GBGeoNameMunicipalityResolver.ScoreObject<>(m, FuzzySearch.ratio(m.getName().toLowerCase(), lowerCasePlaceName)))
+                        .map(m -> new ScoreObject<>(m, FuzzySearch.ratio(m.getName().toLowerCase(), lowerCasePlaceName)))
                         .filter(score -> score.getScore() > 65)
-                        .max(Comparator.comparingInt(GBGeoNameMunicipalityResolver.ScoreObject::getScore))
+                        .max(Comparator.comparingInt(ScoreObject::getScore))
                         .map(m -> map(m.getObject())).orElse(null)
                 );
     }
@@ -153,7 +153,7 @@ public class DEGeoNameMunicipalityResolver implements GeoNameMunicipalityResolve
         return nutsCodes.stream().filter(n -> n.length() == 5).collect(Collectors.toList());
     }
 
-    public class ScoreObject<T> {
+    public static class ScoreObject<T> {
         private T object;
         private int score;
 

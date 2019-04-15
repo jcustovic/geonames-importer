@@ -1,0 +1,401 @@
+﻿NUTS 3 CODE;LAU CODE;LAU NAME NATIONAL;LAU NAME LATIN;CHANGE (Y/N);POPULATION;TOTAL AREA (m2);DEGURBA;DEG change compared to last year;COASTAL AREA (yes/no);COAST change compared to last year;CITY_ID;CITY_ID change compared to last year;CITY_NAME;GREATER_CITY_ID;GREATER_CITY_ID change compared to last year;GREATER_CITY_NAME;FUA_ID;FUA_ID change compared to last year;FUA_NAME
+UKJ43;E07000109;Gravesham;;No;106808;104958600;1;No;;;UK020C1;No;Gravesham;;;;UK001L3;No;London
+UKH32;E06000034;Thurrock;;No;167025;184318000;1;No;;;UK032C1;No;Thurrock;;;;UK001L3;No;London
+UKJ46;E07000116;Tunbridge Wells;;No;117069;331328700;1;No;;;UK040C1;No;Tunbridge Wells;;;;UK001L3;No;London
+UKJ25;E07000217;Woking;;No;99695;63603400;1;No;;;UK052C1;No;Woking;;;;UK001L3;No;London
+UKH35;E07000073;Harlow;;No;85995;30537900;1;No;;;UK061C1;No;Harlow;;;;UK001L3;No;London
+UKI31;E09000001;City of London;;No;9401;3149600;1;No;;;UK101C1;No;City of London;UK001K2;No;London;UK001L3;No;London
+UKI52;E09000002;Barking and Dagenham;;No;206460;37799200;1;No;;;UK102C1;No;Barking and Dagenham;UK001K2;No;London;UK001L3;No;London
+UKI71;E09000003;Barnet;;No;386083;86748300;1;No;;;UK103C1;No;Barnet;UK001K2;No;London;UK001L3;No;London
+UKI51;E09000004;Bexley;;No;244760;64286500;1;No;;;UK104C1;No;Bexley;UK001K2;No;London;UK001L3;No;London
+UKI72;E09000005;Brent;;No;328254;43232500;1;No;;;UK105C1;No;Brent;UK001K2;No;London;UK001L3;No;London
+UKI61;E09000006;Bromley;;No;326889;150134700;1;No;;;UK106C1;No;Bromley;UK001K2;No;London;UK001L3;No;London
+UKI31;E09000007;Camden;;No;246181;21789500;1;No;;;UK107C1;No;Camden;UK001K2;No;London;UK001L3;No;London
+UKI62;E09000008;Croydon;;No;382304;86494700;1;No;;;UK108C1;No;Croydon;UK001K2;No;London;UK001L3;No;London
+UKI73;E09000009;Ealing;;No;343196;55544700;1;No;;;UK109C1;No;Ealing;UK001K2;No;London;UK001L3;No;London
+UKI54;E09000010;Enfield;;No;331395;82200200;1;No;;;UK110C1;No;Enfield;UK001K2;No;London;UK001L3;No;London
+UKI51;E09000011;Greenwich;;No;279766;50441800;1;No;;;UK111C1;No;Greenwich;UK001K2;No;London;UK001L3;No;London
+UKI41;E09000012;Hackney;;No;273526;19049200;1;No;;;UK112C1;No;Hackney;UK001K2;No;London;UK001L3;No;London
+UKI33;E09000013;Hammersmith and Fulham;;No;179654;17154100;1;No;;;UK113C1;No;Hammersmith and Fulham;UK001K2;No;London;UK001L3;No;London
+UKI43;E09000014;Haringey;;No;278451;29598300;1;No;;;UK114C1;No;Haringey;UK001K2;No;London;UK001L3;No;London
+UKI74;E09000015;Harrow;;No;248752;50463400;1;No;;;UK115C1;No;Harrow;UK001K2;No;London;UK001L3;No;London
+UKI52;E09000016;Havering;;No;252783;114457300;1;No;;;UK116C1;No;Havering;UK001K2;No;London;UK001L3;No;London
+UKI74;E09000017;Hillingdon;;No;302471;115700200;1;No;;;UK117C1;No;Hillingdon;UK001K2;No;London;UK001L3;No;London
+UKI75;E09000018;Hounslow;;No;271139;56585400;1;No;;;UK118C1;No;Hounslow;UK001K2;No;London;UK001L3;No;London
+UKI43;E09000019;Islington;;No;232865;14856500;1;No;;;UK119C1;No;Islington;UK001K2;No;London;UK001L3;No;London
+UKI33;E09000020;Kensington and Chelsea;;No;156726;12383700;1;No;;;UK120C1;No;Kensington and Chelsea;UK001K2;No;London;UK001L3;No;London
+UKI63;E09000021;Kingston upon Thames;;No;176107;37261200;1;No;;;UK121C1;No;Kingston upon Thames;UK001K2;No;London;UK001L3;No;London
+UKI45;E09000022;Lambeth;;No;327910;27249300;1;No;;;UK122C1;No;Lambeth;UK001K2;No;London;UK001L3;No;London
+UKI44;E09000023;Lewisham;;No;301867;35316700;1;No;;;UK123C1;No;Lewisham;UK001K2;No;London;UK001L3;No;London
+UKI63;E09000024;Merton;;No;205029;37624800;1;No;;;UK124C1;No;Merton;UK001K2;No;London;UK001L3;No;London
+UKI41;E09000025;Newham;;No;340978;38578100;1;No;;;UK125C1;No;Newham;UK001K2;No;London;UK001L3;No;London
+UKI53;E09000026;Redbridge;;No;299249;56442100;1;No;;;UK126C1;No;Redbridge;UK001K2;No;London;UK001L3;No;London
+UKI75;E09000027;Richmond upon Thames;;No;195846;58761400;1;No;;;UK127C1;No;Richmond upon Thames;UK001K2;No;London;UK001L3;No;London
+UKI44;E09000028;Southwark;;No;313223;29913400;1;No;;;UK128C1;No;Southwark;UK001K2;No;London;UK001L3;No;London
+UKI63;E09000029;Sutton;;No;202220;43847100;1;No;;;UK129C1;No;Sutton;UK001K2;No;London;UK001L3;No;London
+UKI42;E09000030;Tower Hamlets;;No;304854;21575000;1;No;;;UK130C1;No;Tower Hamlets;UK001K2;No;London;UK001L3;No;London
+UKI53;E09000031;Waltham Forest;;No;275843;38807800;1;No;;;UK131C1;No;Waltham Forest;UK001K2;No;London;UK001L3;No;London
+UKI34;E09000032;Wandsworth;;No;316096;35220200;1;No;;;UK132C1;No;Wandsworth;UK001K2;No;London;UK001L3;No;London
+UKI32;E09000033;Westminster;;No;247614;22030100;1;No;;;UK133C1;No;Westminster;UK001K2;No;London;UK001L3;No;London
+UKH37;E07000066;Basildon;;No;183378;110445900;1;No;;;UK538C1;No;Basildon;;;;UK001L3;No;London
+UKH31;E06000033;Southend-on-Sea;;No;179799;67901100;1;No;;;UK541C1;No;Southend-on-Sea;UK541K1;No;Southend-on-Sea;UK001L3;No;London
+UKH36;E07000070;Chelmsford;;No;174089;342997300;1;No;;;UK544C1;No;Chelmsford;;;;UK001L3;No;London
+UKH23;E07000240;St Albans;;No;146282;161205900;1;No;;;UK563C1;No;St Albans;;;;UK001L3;No;London
+UKH23;E07000103;Watford;;No;96773;21430400;1;No;;;UK577C1;No;Watford;;;;UK001L3;No;London
+UKH37;E07000069;Castle Point;;No;89731;63698400;1;No;;;;;;UK541K1;No;Southend-on-Sea;UK001L3;No;London
+UKG31;E08000025;Birmingham;;No;1124569;267791300;1;No;;;UK002C1;No;Birmingham;UK002K1;No;West Midlands urban area;UK002L3;No;West Midlands urban area
+UKG39;E08000031;Wolverhampton;;No;256621;69436500;1;No;;;UK028C1;No;Wolverhampton;UK002K1;No;West Midlands urban area;UK002L3;No;West Midlands urban area
+UKG24;E07000192;Cannock Chase;;No;98534;78882500;1;No;;;UK054C1;No;Cannock Chase;;;;UK002L3;No;West Midlands urban area
+UKG24;E07000199;Tamworth;;No;76955;30850800;1;No;;;UK060C1;No;Tamworth;;;;UK002L3;No;West Midlands urban area
+UKG36;E08000027;Dudley;;No;317634;97958400;1;No;;;UK504C1;No;Dudley;UK002K1;No;West Midlands urban area;UK002L3;No;West Midlands urban area
+UKG37;E08000028;Sandwell;;No;322712;85558900;1;No;;;UK509C1;No;Sandwell;UK002K1;No;West Midlands urban area;UK002L3;No;West Midlands urban area
+UKG38;E08000030;Walsall;;No;278715;103973400;1;No;;;UK512C1;No;Walsall;UK002K1;No;West Midlands urban area;UK002L3;No;West Midlands urban area
+UKG32;E08000029;Solihull;;No;211763;178282100;1;No;;;UK527C1;No;Solihull;UK002K1;No;West Midlands urban area;UK002L3;No;West Midlands urban area
+UKE42;E08000035;Leeds;;No;781743;551706500;1;No;;;UK003C1;No;Leeds;;;;UK003L2;No;Leeds
+UKE41;E08000032;Bradford;;No;534279;366419800;1;No;;;UK005C1;No;Bradford;;;;UK003L2;No;Leeds
+UKE44;E08000034;Kirklees;;No;437047;408551600;1;No;;;UK501C1;No;Kirklees;;;;UK003L2;No;Leeds
+UKE45;E08000036;Wakefield;;No;336834;338619800;1;No;;;UK503C1;No;Wakefield;;;;UK003L2;No;Leeds
+UKM82;S30000019;Glasgow City;;No;615070;176432500;1;No;;;UK004C1;No;Glasgow City;UK004K1;No;Greater Glasgow;UK004L1;No;Glasgow
+UKM84;S30000023;North Lanarkshire;;No;339390;472126100;1;No;;;UK502C1;No;North Lanarkshire (Airdrie/Bellshill/Coatbridge/Motherwell);;;;UK004L1;No;Glasgow
+UKM83;S30000022;Inverclyde;;No;79160;173564400;1;No;;;UK584C1;No;Inverclyde (Greenock);;;;UK004L1;No;Glasgow
+UKM83;S30000021;Renfrewshire;;No;175930;269672600;1;No;;;UK585C1;No;Renfrewshire (Paisley);UK004K1;No;Greater Glasgow;UK004L1;No;Glasgow
+UKM81;S30000015;East Dunbartonshire;;No;107540;174611400;1;No;;;;;;UK004K1;No;Greater Glasgow;UK004L1;No;Glasgow
+UKM83;S30000020;East Renfrewshire;;No;93810;173791900;1;No;;;;;;UK004K1;No;Greater Glasgow;UK004L1;No;Glasgow
+UKD72;E08000012;Liverpool;;No;484578;133534000;1;No;;;UK006C1;No;Liverpool;UK006K2;No;Liverpool;UK006L3;No;Liverpool
+UKD74;E08000015;Wirral;;No;321238;256399100;1;No;;;UK030C1;No;Wirral;UK006K2;No;Liverpool;UK006L3;No;Liverpool
+UKD73;E08000014;Sefton;;No;274261;204779600;1;No;;;UK508C1;No;Sefton;UK006K2;No;Liverpool;UK006L3;No;Liverpool
+UKD71;E08000013;St. Helens;;No;178455;136358700;1;No;;;UK537C1;No;St. Helens;UK006K2;No;Liverpool;UK006L3;No;Liverpool
+UKD71;E08000011;Knowsley;;No;147915;86500200;1;No;;;;;;UK006K2;No;Liverpool;UK006L3;No;Liverpool
+UKM75;S30000008;City of Edinburgh;;Yes;507170;273044300;1;No;;;UK007C1;No;City of Edinburgh;;;;UK007L1;No;Edinburgh
+UKD33;E08000003;Manchester;;No;541263;115648600;1;No;;;UK008C1;No;Manchester;UK008K1;No;Greater Manchester;UK008L3;No;Greater Manchester
+UKD36;E08000010;Wigan;;No;323060;188171200;1;No;;;UK505C1;No;Wigan;UK008K1;No;Greater Manchester;UK008L3;No;Greater Manchester
+UKD35;E08000007;Stockport;;No;290557;126040200;1;No;;;UK507C1;No;Stockport;UK008K1;No;Greater Manchester;UK008L3;No;Greater Manchester
+UKD36;E08000001;Bolton;;No;283115;139792300;1;No;;;UK511C1;No;Bolton;UK008K1;No;Greater Manchester;UK008L3;No;Greater Manchester
+UKD37;E08000004;Oldham;;No;232724;142345000;1;No;;;UK521C1;No;Oldham;UK008K1;No;Greater Manchester;UK008L3;No;Greater Manchester
+UKD34;E08000006;Salford;;No;248726;97197400;1;No;;;UK522C1;No;Salford;UK008K1;No;Greater Manchester;UK008L3;No;Greater Manchester
+UKD35;E08000008;Tameside;;No;223189;103154300;1;No;;;UK523C1;No;Tameside;UK008K1;No;Greater Manchester;UK008L3;No;Greater Manchester
+UKD34;E08000009;Trafford;;No;234673;106044700;1;No;;;UK524C1;No;Trafford;UK008K1;No;Greater Manchester;UK008L3;No;Greater Manchester
+UKD37;E08000005;Rochdale;;No;216165;158128300;1;No;;;UK526C1;No;Rochdale;UK008K1;No;Greater Manchester;UK008L3;No;Greater Manchester
+UKD37;E08000002;Bury;;No;188669;99460100;1;No;;;UK534C1;No;Bury;UK008K1;No;Greater Manchester;UK008L3;No;Greater Manchester
+UKL22;W06000015;Cardiff;;No;361468;149511200;1;No;;;UK009C1;No;Cardiff;;;;UK009L1;No;Cardiff
+UKE32;E08000019;Sheffield;;No;575424;367930200;1;No;;;UK010C1;No;Sheffield;;;;UK010L3;No;Sheffield
+UKE31;E08000018;Rotherham;;No;261930;286534300;1;No;;;UK514C1;No;Rotherham;;;;UK010L3;No;Sheffield
+UKE31;E08000016;Barnsley;;No;241218;329077700;1;No;;;UK519C1;No;Barnsley;;;;UK010L3;No;Sheffield
+UKK11;E06000023;Bristol, City of;;No;454213;235328500;1;No;;;UK011C1;No;Bristol, City of;;;;UK011L2;No;Bristol
+UKC22;E08000021;Newcastle upon Tyne;;No;296478;115117800;1;No;;;UK013C1;No;Newcastle upon Tyne;UK013K1;No;Tyneside conurbation;UK013L2;No;Tyneside conurbation
+UKC22;E08000022;North Tyneside;;No;203307;84819300;1;No;;;UK529C1;No;North Tyneside;UK013K1;No;Tyneside conurbation;UK013L2;No;Tyneside conurbation
+UKC22;E08000037;Gateshead;;No;201592;144079700;1;No;;;UK530C1;No;Gateshead;UK013K1;No;Tyneside conurbation;UK013L2;No;Tyneside conurbation
+UKC22;E08000023;South Tyneside;;No;149418;67108500;1;No;;;UK547C1;No;South Tyneside;UK013K1;No;Tyneside conurbation;UK013L2;No;Tyneside conurbation
+UKF21;E06000016;Leicester;;No;348343;73342100;1;No;;;UK014C1;No;Leicester;UK014K1;No;Leicester;UK014L1;No;Leicester
+UKF22;E07000129;Blaby;;No;97703;130468600;1;No;;;;;;UK014K1;No;Leicester;UK014L1;No;Leicester
+UKF22;E07000135;Oadby and Wigston;;No;55825;23526100;1;No;;;;;;UK014K1;No;Leicester;UK014L1;No;Leicester
+UKM50;S30000026;Aberdeen City;;No;229840;205610300;1;No;;;UK016C1;No;Aberdeen City;;;;UK016L1;No;Aberdeen
+UKH12;E07000008;Cambridge;;No;131799;40698700;1;No;;;UK017C1;No;Cambridge;;;;UK017L2;No;Cambridge
+UKK43;E07000041;Exeter;;No;129801;47888500;1;No;;;UK018C1;No;Exeter;;;;UK018L3;No;Exeter
+UKF30;E07000138;Lincoln;;No;97795;35690100;1;No;;;UK019C1;No;Lincoln;;;;UK019L3;No;Lincoln
+UKJ31;E06000044;Portsmouth;;No;214832;60144500;1;No;;;UK023C1;No;Portsmouth;UK023K1;No;Portsmouth;UK023L1;No;Portsmouth
+UKJ35;E07000088;Gosport;;No;85363;27577800;1;No;;;UK578C1;No;Gosport;UK023K1;No;Portsmouth;UK023L1;No;Portsmouth
+UKJ35;E07000087;Fareham;;No;115423;77799700;1;No;;;;;;UK023K1;No;Portsmouth;UK023L1;No;Portsmouth
+UKJ35;E07000090;Havant;;No;123640;79099600;1;No;;;;;;UK023K1;No;Portsmouth;UK023L1;No;Portsmouth
+UKG12;E07000237;Worcester;;No;102338;33278200;1;No;;;UK024C1;No;Worcester;;;;UK024L1;No;Worcester
+UKG33;E08000026;Coventry;;No;352911;98639000;1;No;;;UK025C1;No;Coventry;;;;UK025L3;No;Coventry
+UKG13;E07000219;Nuneaton and Bedworth;;No;127019;78950400;1;No;;;UK035C1;No;Nuneaton and Bedworth;;;;UK025L3;No;Coventry
+UKG13;E07000222;Warwick;;No;140411;282882100;1;No;;;UK564C1;No;Warwick;;;;UK025L3;No;Coventry
+UKG13;E07000220;Rugby;;No;103815;353557300;1;No;;;UK581C1;No;Rugby;;;;UK025L3;No;Coventry
+UKE11;E06000010;Kingston upon Hull, City of;;No;260240;81497600;1;No;;;UK026C1;No;Kingston upon Hull, City of;;;;UK026L1;No;Kingston upon Hull
+UKG23;E06000021;Stoke-on-Trent;;No;253226;93448500;1;No;;;UK027C1;No;Stoke-on-Trent;UK027K1;No;Stoke-on-Trent;UK027L1;No;Stoke-on-Trent
+UKG24;E07000195;Newcastle-under-Lyme;;No;128467;210957300;1;No;;;UK565C1;No;Newcastle-under-Lyme;UK027K1;No;Stoke-on-Trent;UK027L1;No;Stoke-on-Trent
+UKF14;E06000018;Nottingham;;No;325282;74613500;1;No;;;UK029C1;No;Nottingham;UK029K1;No;Greater Nottingham;UK029L1;No;Greater Nottingham
+UKF16;E07000172;Broxtowe;;No;112671;80098900;1;No;;;;;;UK029K1;No;Greater Nottingham;UK029L1;No;Greater Nottingham
+UKF16;E07000173;Gedling;;No;116501;119981600;1;No;;;;;;UK029K1;No;Greater Nottingham;UK029L1;No;Greater Nottingham
+UKF16;E07000176;Rushcliffe;;No;115204;409231700;1;No;;;;;;UK029K1;No;Greater Nottingham;UK029L1;No;Greater Nottingham
+UKJ25;E07000209;Guildford;;No;148020;270931100;1;No;;;UK033C1;No;Guildford;;;;UK033L1;No;Guildford
+UKD46;E07000117;Burnley;;No;87522;110684000;1;No;;;UK050C1;No;Burnley;;;;UK050L1;No;Burnley
+UKJ22;E07000062;Hastings;;No;92236;30831700;1;No;;;UK056C1;No;Hastings;;;;UK056L1;No;Hastings
+UKJ21;E06000043;Brighton and Hove;;No;289229;85376700;1;No;;;UK515C1;No;Brighton and Hove;UK515K1;No;Brighton and Hove;UK515L1;No;Brighton and Hove
+UKJ27;E07000223;Adur;;No;63506;43563800;1;No;;;;;;UK515K1;No;Brighton and Hove;UK515L1;No;Brighton and Hove
+UKK41;E06000026;Plymouth;;No;264199;84362900;1;No;;;UK516C1;No;Plymouth;;;;UK516L1;No;Plymouth
+UKL18;W06000011;Swansea;;No;244513;420897700;1;No;;;UK517C1;No;Swansea;;;;UK517L1;No;Swansea
+UKF11;E06000015;Derby;;No;256233;78031100;1;No;;;UK518C1;No;Derby;;;;UK518L1;No;Derby
+UKJ32;E06000045;Southampton;;No;254275;56385300;1;No;;;UK520C1;No;Southampton;UK520K1;No;Southampton;UK520L2;No;Southampton
+UKJ35;E07000086;Eastleigh;;No;129635;85268000;1;No;;;UK579C1;No;Eastleigh;UK520K1;No;Southampton;UK520L2;No;Southampton
+UKF24;E07000154;Northampton;;No;225474;80771800;1;No;;;UK528C1;No;Northampton;;;;UK528L1;No;Northampton
+UKK21;E06000028;Bournemouth;;No;197657;47168200;1;No;;;UK539C1;No;Bournemouth;UK539K1;No;Bournemouth;UK539L1;No;Bournemouth
+UKK21;E06000029;Poole;;No;151500;74716200;1;No;;;UK555C1;No;Poole;UK539K1;No;Bournemouth;UK539L1;No;Bournemouth
+UKH34;E07000071;Colchester;;No;186635;346713300;1;No;;;UK546C1;No;Colchester;;;;UK546L1;No;Colchester
+UKM71;S30000002;Dundee City;;No;148270;62222900;1;No;;;UK550C1;No;Dundee City;;;;UK550L1;No;Dundee
+UKJ11;E06000038;Reading;;No;162666;40397900;1;No;;;UK552C1;No;Reading;UK552K1;No;Reading;UK552L0;No;Reading
+UKJ11;E06000041;Wokingham;;No;161878;178965500;1;No;;;;;;UK552K1;No;Reading;UK552L0;No;Reading
+UKD42;E06000009;Blackpool;;No;139195;43150800;1;No;;;UK553C1;No;Blackpool;UK553K1;No;Blackpool;UK553L1;No;Blackpool
+UKD44;E07000128;Wyre;;No;110261;329030000;1;No;;;;;;UK553K1;No;Blackpool;UK553L1;No;Blackpool
+UKD46;E07000120;Hyndburn;;No;80537;72997400;1;No;;;UK057C1;No;Hyndburn;;;;UK557L1;No;Blackburn with Darwen
+UKD41;E06000008;Blackburn with Darwen;;No;147049;137022000;1;No;;;UK557C1;No;Blackburn with Darwen;;;;UK557L1;No;Blackburn with Darwen
+UKL21;W06000022;Newport;;No;149148;217767600;1;No;;;UK558C1;No;Newport;;;;UK558L1;No;Newport
+UKC11;E06000001;Hartlepool;;No;92817;98441700;1;No;;;UK053C1;No;Hartlepool;;;;UK559L2;No;Middlesbrough
+UKC11;E06000004;Stockton-on-Tees;;No;195681;209731000;1;No;;;UK536C1;No;Stockton-on-Tees;;;;UK559L2;No;Middlesbrough
+UKC12;E06000002;Middlesbrough;;No;140398;54553700;1;No;;;UK559C1;No;Middlesbrough;;;;UK559L2;No;Middlesbrough
+UKJ14;E07000178;Oxford;;No;161291;45602800;1;No;;;UK560C1;No;Oxford;;;;UK560L1;No;Oxford
+UKD45;E07000123;Preston;;No;141801;142944800;1;No;;;UK562C1;No;Preston;UK562K1;No;Preston;UK562L2;No;Preston
+UKD45;E07000126;South Ribble;;No;110118;114614900;1;No;;;;;;UK562K1;No;Preston;UK562L2;No;Preston
+UKH15;E07000148;Norwich;;No;141041;40554100;1;No;;;UK566C1;No;Norwich;;;;UK566L1;No;Norwich
+UKD63;E06000050;Cheshire West and Chester;;No;335680;941207100;1;No;;;UK568C2;No;Cheshire West and Chester;;;;UK568L1;No;Cheshire West and Chester
+UKH14;E07000202;Ipswich;;No;135908;40300200;1;No;;;UK569C1;No;Ipswich;;;;UK569L2;No;Ipswich
+UKK13;E07000078;Cheltenham;;No;117530;46596200;1;No;;;UK571C1;No;Cheltenham;;;;UK571L1;No;Cheltenham
+UKH23;E07000243;Stevenage;;No;87081;25969100;1;No;;;UK021C1;No;Stevenage;;;;;;
+UKL23;W06000006;Wrexham;;No;136710;503773900;1;No;;;UK022C1;No;Wrexham;;;;;;
+UKK12;E06000022;Bath and North East Somerset;;No;187751;351123400;1;No;;;UK031C1;No;Bath and North East Somerset;;;;;;
+UKJ44;E07000114;Thanet;;No;140652;112339000;1;No;;;UK034C1;No;Thanet;;;;;;
+UKH14;E07000206;Waveney;;No;116514;374786400;1;No;;;UK038C1;No;Waveney;;;;;;
+UKJ45;E07000105;Ashford;;No;126151;580617400;1;No;;;UK041C1;No;Ashford;;;;;;
+UKG24;E07000193;East Staffordshire;;No;116701;389985300;1;No;;;UK043C1;No;East Staffordshire;;;;;;
+UKC13;E06000005;Darlington;;No;105646;197475800;1;No;;;UK044C1;No;Darlington;;;;;;
+UKJ27;E07000229;Worthing;;No;108605;33782600;1;No;;;UK045C1;No;Worthing;;;;;;
+UKF15;E07000174;Mansfield;;No;107435;76697000;1;No;;;UK046C1;No;Mansfield;;;;;;
+UKF12;E07000034;Chesterfield;;No;104440;66035200;1;No;;;UK047C1;No;Chesterfield;;;;;;
+UKH15;E07000145;Great Yarmouth;;No;99164;182472000;1;No;;;UK051C1;No;Great Yarmouth;;;;;;
+UKJ22;E07000061;Eastbourne;;No;103054;45529000;1;No;;;UK055C1;No;Eastbourne;;;;;;
+UKG12;E07000236;Redditch;;No;84971;54250900;1;No;;;UK059C1;No;Redditch;;;;;;
+UKD71;E06000006;Halton;;No;126903;90321500;1;No;;;UK062C1;No;Halton;;;;;;
+UKE31;E08000017;Doncaster;;No;306397;568551000;1;No;;;UK506C1;No;Doncaster;;;;;;
+UKC23;E08000024;Sunderland;;No;277962;139630200;1;No;;;UK510C1;No;Sunderland;;;;;;
+UKJ41;E06000035;Medway;;No;278542;269063700;1;No;;;UK513C1;No;Medway;;;;;;
+UKJ12;E06000042;Milton Keynes;;No;264479;308626700;1;No;;;UK525C1;No;Milton Keynes;;;;;;
+UKD61;E06000007;Warrington;;No;208809;182383400;1;No;;;UK531C1;No;Warrington;;;;;;
+UKH21;E06000032;Luton;;No;216791;43352500;1;No;;;UK532C1;No;Luton;;;;;;
+UKE21;E06000014;York;;No;208367;272014800;1;No;;;UK533C1;No;York;;;;;;
+UKK14;E06000030;Swindon;;No;217905;230093200;1;No;;;UK535C1;No;Swindon;;;;;;
+UKJ13;E07000007;Wycombe;;No;176868;324572000;1;No;;;UK540C1;No;Wycombe;;;;;;
+UKG21;E06000020;Telford and Wrekin;;No;172976;290313700;1;No;;;UK542C1;No;Telford and Wrekin;;;;;;
+UKE13;E06000012;North East Lincolnshire;;No;159144;203553900;1;No;;;UK543C1;No;North East Lincolnshire;;;;;;
+UKH11;E06000031;Peterborough;;No;197095;343437900;1;No;;;UK545C1;No;Peterborough;;;;;;
+UKJ37;E07000084;Basingstoke and Deane;;No;174588;633817200;1;No;;;UK548C1;No;Basingstoke and Deane;;;;;;
+UKH24;E06000055;Bedford;;No;168751;476408300;1;No;;;UK549C1;No;Bedford;;;;;;
+UKM76;S30000009;Falkirk;;No;159380;314931400;1;No;;;UK551C1;No;Falkirk;;;;;;
+UKJ45;E07000110;Maidstone;;No;166360;393350700;1;No;;;UK554C1;No;Maidstone;;;;;;
+UKH23;E07000096;Dacorum;;No;152692;212476500;1;No;;;UK556C1;No;Dacorum;;;;;;
+UKK42;E06000027;Torbay;;No;133883;119467100;1;No;;;UK561C1;No;Torbay;;;;;;
+UKJ11;E06000039;Slough;;No;147181;32541900;1;No;;;UK567C1;No;Slough;;;;;;
+UKK13;E07000081;Gloucester;;No;128488;40826600;1;No;;;UK572C1;No;Gloucester;;;;;;
+UKJ11;E06000036;Bracknell Forest;;No;119447;109384300;1;No;;;UK573C1;No;Bracknell Forest;;;;;;
+UKD12;E07000028;Carlisle;;No;108409;1054358300;1;No;;;UK575C1;No;Carlisle;;;;;;
+UKJ28;E07000226;Crawley;;No;111375;44971100;1;No;;;UK576C1;No;Crawley;;;;;;
+UKJ37;E07000092;Rushmoor;;No;96327;39045000;1;No;;;UK580C1;No;Rushmoor;UK580K1;No;Rushmoor;;;
+UKF25;E07000150;Corby;;No;68187;80280900;1;No;;;UK582C1;No;Corby;;;;;;
+UKF25;E07000153;Kettering;;No;99002;233490000;1;No;;;UK583C1;No;Kettering;;;;;;
+UKJ25;E07000214;Surrey Heath;;No;88387;95092900;1;No;;;;;;UK580K1;No;Rushmoor;;;
+UKJ13;E07000005;Chiltern;;No;95103;196348300;2;No;;;;;;;;;UK001L3;No;London
+UKJ13;E07000006;South Bucks;;No;69636;141275500;2;No;;;;;;;;;UK001L3;No;London
+UKH36;E07000068;Brentwood;;No;76386;153124100;2;No;;;;;;;;;UK001L3;No;London
+UKH35;E07000072;Epping Forest;;No;130321;338984200;2;No;;;;;;;;;UK001L3;No;London
+UKH37;E07000075;Rochford;;No;85670;263411100;2;No;;;;;;;;;UK001L3;No;London
+UKH23;E07000095;Broxbourne;;No;96779;51442200;2;No;;;;;;;;;UK001L3;No;London
+UKH23;E07000098;Hertsmere;;No;103528;101128100;2;No;;;;;;;;;UK001L3;No;London
+UKH23;E07000102;Three Rivers;;No;92533;88824100;2;No;;;;;;;;;UK001L3;No;London
+UKJ43;E07000107;Dartford;;No;105543;76310400;2;No;;;;;;;;;UK001L3;No;London
+UKJ46;E07000111;Sevenoaks;;No;119142;370347000;2;No;;;;;;;;;UK001L3;No;London
+UKJ46;E07000115;Tonbridge and Malling;;No;127293;240973400;2;No;;;;;;;;;UK001L3;No;London
+UKJ25;E07000207;Elmbridge;;No;132764;96334300;2;No;;;;;;;;;UK001L3;No;London
+UKJ26;E07000208;Epsom and Ewell;;No;79588;34079400;2;No;;;;;;;;;UK001L3;No;London
+UKJ26;E07000210;Mole Valley;;No;86223;258321100;2;No;;;;;;;;;UK001L3;No;London
+UKJ26;E07000211;Reigate and Banstead;;No;145648;129143900;2;No;;;;;;;;;UK001L3;No;London
+UKJ25;E07000213;Spelthorne;;No;98902;51161400;2;No;;;;;;;;;UK001L3;No;London
+UKJ26;E07000215;Tandridge;;No;86665;248194800;2;No;;;;;;;;;UK001L3;No;London
+UKH23;E07000241;Welwyn Hatfield;;No;121996;129536800;2;No;;;;;;;;;UK001L3;No;London
+UKH23;E07000242;East Hertfordshire;;No;146309;475669600;2;No;;;;;;;;;UK001L3;No;London
+UKG24;E07000194;Lichfield;;No;103061;331294400;2;No;;;;;;;;;UK002L3;No;West Midlands urban area
+UKG24;E07000196;South Staffordshire;;No;111180;407322300;2;No;;;;;;;;;UK002L3;No;West Midlands urban area
+UKG13;E07000218;North Warwickshire;;No;63229;284263500;2;No;;;;;;;;;UK002L3;No;West Midlands urban area
+UKG12;E07000234;Bromsgrove;;No;96769;216968400;2;No;;;;;;;;;UK002L3;No;West Midlands urban area
+UKE22;E07000165;Harrogate;;No;156312;1309127300;2;No;;;;;;;;;UK003L2;No;Leeds
+UKE22;E07000169;Selby;;No;86667;602223300;2;No;;;;;;;;;UK003L2;No;Leeds
+UKE44;E08000033;Calderdale;;No;209770;363960800;2;No;;;;;;;;;UK003L2;No;Leeds
+UKM81;S30000014;West Dunbartonshire;;No;89860;182777900;2;No;;;;;;;;;UK004L1;No;Glasgow
+UKM95;S30000025;South Lanarkshire;;No;317100;1774051800;2;No;;;;;;;;;UK004L1;No;Glasgow
+UKD47;E07000127;West Lancashire;;No;113401;381095200;2;No;;;;;;;;;UK006L3;No;Liverpool
+UKM73;S30000005;East Lothian;;No;104090;700937700;2;No;;;;;;;;;UK007L1;No;Edinburgh
+UKM73;S30000006;Midlothian;;No;88610;355275200;2;No;;;;;;;;;UK007L1;No;Edinburgh
+UKM78;S30000012;West Lothian;;No;180130;431585000;2;No;;;;;;;;;UK007L1;No;Edinburgh
+UKD62;E06000049;Cheshire East;;No;376695;1166357600;2;No;;;;;;;;;UK008L3;No;Greater Manchester
+UKF13;E07000037;High Peak;;No;91662;540254100;2;No;;;;;;;;;UK008L3;No;Greater Manchester
+UKD46;E07000125;Rossendale;;No;69886;138041200;2;No;;;;;;;;;UK008L3;No;Greater Manchester
+UKL22;W06000014;Vale of Glamorgan;;No;128463;339675700;2;No;;;;;;;;;UK009L1;No;Cardiff
+UKL15;W06000016;Rhondda Cynon Taf;;No;238306;424150300;2;No;;;;;;;;;UK009L1;No;Cardiff
+UKL16;W06000018;Caerphilly;;No;180462;277387900;2;No;;;;;;;;;UK009L1;No;Cardiff
+UKF12;E07000038;North East Derbyshire;;No;100423;275623500;2;No;;;;;;;;;UK010L3;No;Sheffield
+UKK12;E06000024;North Somerset;;No;211681;390815000;2;No;;;;;;;;;UK011L2;No;Bristol
+UKK12;E06000025;South Gloucestershire;;No;277623;536645600;2;No;;;;;;;;;UK011L2;No;Bristol
+UKC21;E06000057;Northumberland;;No;316002;5078180300;2;No;;;;;;;;;UK013L2;No;Tyneside conurbation
+UKF22;E07000130;Charnwood;;No;179389;279042700;2;No;;;;;;;;;UK014L1;No;Leicester
+UKF22;E07000131;Harborough;;No;90416;592692300;2;No;;;;;;;;;UK014L1;No;Leicester
+UKF22;E07000132;Hinckley and Bosworth;;No;110102;297349100;2;No;;;;;;;;;UK014L1;No;Leicester
+UKH12;E07000009;East Cambridgeshire;;No;87825;651720300;2;No;;;;;;;;;UK017L2;No;Cambridge
+UKK43;E07000040;East Devon;;No;139908;823704400;2;No;;;;;;;;;UK018L3;No;Exeter
+UKK43;E07000045;Teignbridge;;No;129856;681008100;2;No;;;;;;;;;UK018L3;No;Exeter
+UKF30;E07000139;North Kesteven;;No;113297;922471400;2;No;;;;;;;;;UK019L3;No;Lincoln
+UKG12;E07000235;Malvern Hills;;No;76130;577071000;2;No;;;;;;;;;UK024L1;No;Worcester
+UKE12;E06000011;East Riding of Yorkshire;;No;337696;2494795600;2;No;;;;;;;;;UK026L1;No;Kingston upon Hull
+UKG24;E07000198;Staffordshire Moorlands;;No;98069;575849800;2;No;;;;;;;;;UK027L1;No;Stoke-on-Trent
+UKF13;E07000036;Erewash;;No;114891;109630100;2;No;;;;;;;;;UK029L1;No;Greater Nottingham
+UKF15;E07000170;Ashfield;;No;124482;109558200;2;No;;;;;;;;;UK029L1;No;Greater Nottingham
+UKJ25;E07000216;Waverley;;No;123768;345170100;2;No;;;;;;;;;UK033L1;No;Guildford
+UKD46;E07000122;Pendle;;No;90588;169380100;2;No;;;;;;;;;UK050L1;No;Burnley
+UKJ22;E07000064;Rother;;No;93551;518153300;2;No;;;;;;;;;UK056L1;No;Hastings
+UKJ22;E07000063;Lewes;;No;101381;294389300;2;No;;;;;;;;;UK515L1;No;Brighton and Hove
+UKL17;W06000012;Neath Port Talbot;;No;141588;451870000;2;No;;;;;;;;;UK517L1;No;Swansea
+UKF13;E07000032;Amber Valley;;No;124645;265437900;2;No;;;;;;;;;UK518L1;No;Derby
+UKF13;E07000039;South Derbyshire;;No;100334;338129000;2;No;;;;;;;;;UK518L1;No;Derby
+UKJ36;E07000091;New Forest;;No;179236;776909300;2;No;;;;;;;;;UK520L2;No;Southampton
+UKJ36;E07000093;Test Valley;;No;122044;627622000;2;No;;;;;;;;;UK520L2;No;Southampton
+UKF25;E07000156;Wellingborough;;No;78191;163036300;2;No;;;;;;;;;UK528L1;No;Northampton
+UKK22;E07000048;Christchurch;;No;49481;51695500;2;No;;;;;;;;;UK539L1;No;Bournemouth
+UKK22;E07000049;East Dorset;;No;89093;354417900;2;No;;;;;;;;;UK539L1;No;Bournemouth
+UKK22;E07000051;Purbeck;;No;46336;427583900;2;No;;;;;;;;;UK539L1;No;Bournemouth
+UKH34;E07000076;Tendring;;No;142598;365817900;2;No;;;;;;;;;UK546L1;No;Colchester
+UKM71;S30000001;Angus;;No;116520;2204238300;2;No;;;;;;;;;UK550L1;No;Dundee
+UKD45;E07000119;Fylde;;No;77990;182633400;2;No;;;;;;;;;UK553L1;No;Blackpool
+UKD45;E07000124;Ribble Valley;;No;58826;584471500;2;No;;;;;;;;;UK557L1;No;Blackburn with Darwen
+UKL16;W06000020;Torfaen;;No;92052;126240100;2;No;;;;;;;;;UK558L1;No;Newport
+UKC12;E06000003;Redcar and Cleveland;;No;135404;253890800;2;No;;;;;;;;;UK559L2;No;Middlesbrough
+UKJ14;E07000177;Cherwell;;No;146338;588741200;2;No;;;;;;;;;UK560L1;No;Oxford
+UKJ14;E07000180;Vale of White Horse;;No;128738;578644500;2;No;;;;;;;;;UK560L1;No;Oxford
+UKJ14;E07000181;West Oxfordshire;;No;108674;714421900;2;No;;;;;;;;;UK560L1;No;Oxford
+UKH15;E07000144;Broadland;;No;127455;553244400;2;No;;;;;;;;;UK566L1;No;Norwich
+UKL23;W06000005;Flintshire;;No;154419;489439300;2;No;;;;;;;;;UK568L1;No;Cheshire West and Chester
+UKH14;E07000205;Suffolk Coastal;;No;125955;920700400;2;No;;;;;;;;;UK569L2;No;Ipswich
+UKK13;E07000083;Tewkesbury;;No;88589;414976000;2;No;;;;;;;;;UK571L1;No;Cheltenham
+UKE13;E06000013;North Lincolnshire;;No;170786;875684700;2;No;;;;;;;;;;;
+UKJ11;E06000037;West Berkshire;;No;156837;704169300;2;No;;;;;;;;;;;
+UKJ11;E06000040;Windsor and Maidenhead;;No;148814;198427200;2;No;;;;;;;;;;;
+UKJ34;E06000046;Isle of Wight;;No;139798;394928700;2;No;;;;;;;;;;;
+UKC14;E06000047;County Durham;;No;522143;2232698600;2;No;;;;;;;;;;;
+UKG22;E06000051;Shropshire;;No;313373;3197275700;2;No;;;;;;;;;;;
+UKK30;E06000052;Cornwall;;No;553687;3613442300;2;No;;;;;;;;;;;
+UKK15;E06000054;Wiltshire;;No;488409;3255338100;2;No;;;;;;;;;;;
+UKH25;E06000056;Central Bedfordshire;;No;278937;715665400;2;No;;;;;;;;;;;
+UKJ13;E07000004;Aylesbury Vale;;No;193113;902753300;2;No;;;;;;;;;;;
+UKH12;E07000010;Fenland;;No;100182;547355300;2;No;;;;;;;;;;;
+UKH12;E07000011;Huntingdonshire;;No;175666;912545700;2;No;;;;;;;;;;;
+UKD11;E07000026;Allerdale;;No;96956;1320563400;2;No;;;;;;;;;;;
+UKD11;E07000027;Barrow-in-Furness;;No;67321;132063900;2;No;;;;;;;;;;;
+UKD11;E07000029;Copeland;;No;69307;775821300;2;No;;;;;;;;;;;
+UKD12;E07000031;South Lakeland;;No;103274;1743191000;2;No;;;;;;;;;;;
+UKF12;E07000033;Bolsover;;No;78082;160334600;2;No;;;;;;;;;;;
+UKK43;E07000043;North Devon;;No;94615;1105045200;2;No;;;;;;;;;;;
+UKK43;E07000046;Torridge;;No;66977;995593300;2;No;;;;;;;;;;;
+UKK22;E07000050;North Dorset;;No;71064;609217800;2;No;;;;;;;;;;;
+UKK22;E07000053;Weymouth and Portland;;No;65371;42996200;2;No;;;;;;;;;;;
+UKJ22;E07000065;Wealden;;No;157575;836265400;2;No;;;;;;;;;;;
+UKH34;E07000067;Braintree;;No;150999;611708100;2;No;;;;;;;;;;;
+UKH36;E07000074;Maldon;;No;63350;426688600;2;No;;;;;;;;;;;
+UKK13;E07000082;Stroud;;No;117381;476173000;2;No;;;;;;;;;;;
+UKJ36;E07000085;East Hampshire;;No;117955;514432100;2;No;;;;;;;;;;;
+UKJ37;E07000089;Hart;;No;94250;215265000;2;No;;;;;;;;;;;
+UKJ36;E07000094;Winchester;;No;121965;661071000;2;No;;;;;;;;;;;
+UKH23;E07000099;North Hertfordshire;;No;132747;375382100;2;No;;;;;;;;;;;
+UKJ44;E07000106;Canterbury;;No;162416;320889400;2;No;;;;;;;;;;;
+UKJ44;E07000108;Dover;;No;114227;320827000;2;No;;;;;;;;;;;
+UKJ44;E07000112;Shepway;;No;111190;365515200;2;No;;;;;;;;;;;
+UKJ43;E07000113;Swale;;No;145042;422095600;2;No;;;;;;;;;;;
+UKD47;E07000118;Chorley;;No;114351;202905700;2;No;;;;;;;;;;;
+UKD44;E07000121;Lancaster;;No;143517;654210100;2;No;;;;;;;;;;;
+UKF22;E07000133;Melton;;No;50878;481380500;2;No;;;;;;;;;;;
+UKF22;E07000134;North West Leicestershire;;No;98644;279328000;2;No;;;;;;;;;;;
+UKF30;E07000136;Boston;;No;67564;397792700;2;No;;;;;;;;;;;
+UKF30;E07000140;South Holland;;No;92387;815503700;2;No;;;;;;;;;;;
+UKF30;E07000141;South Kesteven;;No;140193;942586100;2;No;;;;;;;;;;;
+UKH17;E07000143;Breckland;;No;137032;1305116700;2;No;;;;;;;;;;;
+UKF25;E07000152;East Northamptonshire;;No;90999;509787200;2;No;;;;;;;;;;;
+UKE22;E07000168;Scarborough;;No;107824;826253500;2;No;;;;;;;;;;;
+UKF15;E07000171;Bassetlaw;;No;114847;639492900;2;No;;;;;;;;;;;
+UKF15;E07000175;Newark and Sherwood;;No;119570;651835500;2;No;;;;;;;;;;;
+UKJ14;E07000179;South Oxfordshire;;No;138128;678537200;2;No;;;;;;;;;;;
+UKK23;E07000187;Mendip;;No;112545;739435600;2;No;;;;;;;;;;;
+UKK23;E07000188;Sedgemoor;;No;121436;605874100;2;No;;;;;;;;;;;
+UKK23;E07000189;South Somerset;;No;165645;959058100;2;No;;;;;;;;;;;
+UKK23;E07000190;Taunton Deane;;No;115515;462503100;2;No;;;;;;;;;;;
+UKK23;E07000191;West Somerset;;No;34306;746983400;2;No;;;;;;;;;;;
+UKG24;E07000197;Stafford;;No;134155;598172100;2;No;;;;;;;;;;;
+UKH14;E07000201;Forest Heath;;No;64447;377710900;2;No;;;;;;;;;;;
+UKH14;E07000204;St Edmundsbury;;No;112938;656964900;2;No;;;;;;;;;;;
+UKJ25;E07000212;Runnymede;;No;86889;78040700;2;No;;;;;;;;;;;
+UKJ27;E07000224;Arun;;No;156997;224280700;2;No;;;;;;;;;;;
+UKJ27;E07000225;Chichester;;No;118175;811873500;2;No;;;;;;;;;;;
+UKJ28;E07000227;Horsham;;No;138018;530962200;2;No;;;;;;;;;;;
+UKJ28;E07000228;Mid Sussex;;No;147089;334029400;2;No;;;;;;;;;;;
+UKG12;E07000238;Wychavon;;No;122943;663541800;2;No;;;;;;;;;;;
+UKG12;E07000239;Wyre Forest;;No;99902;195403800;2;No;;;;;;;;;;;
+UKM72;S30000003;Clackmannanshire;;No;51350;163921200;2;No;;;;;;;;;;;
+UKM72;S30000004;Fife;;No;370330;1373921100;2;No;;;;;;;;;;;
+UKM77;S30000010;Perth and Kinross;;Yes;150680;5418909100;2;No;;;;;;;;;;;
+UKM77;S30000011;Stirling;;No;93750;2254811700;2;No;;;;;;;;;;;
+UKM93;S30000017;East Ayrshire;;No;122200;1270334200;2;No;;;;;;;;;;;
+UKM94;S30000024;South Ayrshire;;No;112470;1234722100;2;No;;;;;;;;;;;
+UKL13;W06000003;Conwy;;No;116538;1153483500;2;No;;;;;;;;;;;
+UKL13;W06000004;Denbighshire;;No;94805;846380100;2;No;;;;;;;;;;;
+UKL14;W06000010;Carmarthenshire;;No;185610;2438947400;2;No;;;;;;;;;;;
+UKL17;W06000013;Bridgend;;No;143177;255311400;2;No;;;;;;;;;;;
+UKL16;W06000019;Blaenau Gwent;;No;69628;108727900;2;No;;;;;;;;;;;
+UKL21;W06000021;Monmouthshire;;No;92843;886053400;2;No;;;;;;;;;;;
+UKL15;W06000024;Merthyr Tydfil;;No;59810;111956900;2;No;;;;;;;;;;;
+UKM81;S30000013;Helensburgh and Lomond;;Yes;26421;394055000;2;No;;;;;;;;;;;
+UKM93;S30000018;North Ayrshire mainland;;No;130030;450031100;2;No;;;;;;;;;;;
+UKM62;S30000030;Inverness and Nairn;;Yes;94104;3356414500;2;No;;;;;;;;;;;
+UKM62;S30000033;North East Moray;;No;71930;829321400;2;No;;;;;;;;;;;
+UKH35;E07000077;Uttlesford;;No;86188;641182800;3;No;;;;;;;;;UK001L3;No;London
+UKE22;E07000163;Craven;;No;56308;1178807400;3;No;;;;;;;;;UK003L2;No;Leeds
+UKM50;S30000027;Aberdeenshire;;No;262190;6338817000;3;No;;;;;;;;;UK016L1;No;Aberdeen
+UKH12;E07000012;South Cambridgeshire;;No;156468;901687200;3;No;;;;;;;;;UK017L2;No;Cambridge
+UKK43;E07000042;Mid Devon;;No;79789;912897800;3;No;;;;;;;;;UK018L3;No;Exeter
+UKF30;E07000142;West Lindsey;;No;93734;1157652200;3;No;;;;;;;;;UK019L3;No;Lincoln
+UKK43;E07000044;South Hams;;No;84306;905248000;3;No;;;;;;;;;UK516L1;No;Plymouth
+UKK43;E07000047;West Devon;;No;54582;1164717800;3;No;;;;;;;;;UK516L1;No;Plymouth
+UKF24;E07000151;Daventry;;No;81316;665600500;3;No;;;;;;;;;UK528L1;No;Northampton
+UKF24;E07000155;South Northamptonshire;;No;89959;634023200;3;No;;;;;;;;;UK528L1;No;Northampton
+UKH17;E07000149;South Norfolk;;No;132837;908906600;3;No;;;;;;;;;UK566L1;No;Norwich
+UKH14;E07000200;Babergh;;No;89498;612041200;3;No;;;;;;;;;UK569L2;No;Ipswich
+UKF22;E06000017;Rutland;;No;38606;393749000;3;No;;;;;;;;;;;
+UKG11;E06000019;Herefordshire, County of;;No;189309;2179709400;3;No;;;;;;;;;;;
+UKK30;E06000053;Isles of Scilly;;No;2308;22849500;3;No;;;;;;;;;;;
+UKD12;E07000030;Eden;;No;52639;2156474500;3;No;;;;;;;;;;;
+UKF13;E07000035;Derbyshire Dales;;No;71288;795317800;3;No;;;;;;;;;;;
+UKK22;E07000052;West Dorset;;No;101382;1087062100;3;No;;;;;;;;;;;
+UKK13;E07000079;Cotswold;;No;85756;1164524200;3;No;;;;;;;;;;;
+UKK13;E07000080;Forest of Dean;;No;85385;561432400;3;No;;;;;;;;;;;
+UKF30;E07000137;East Lindsey;;No;138443;1831072700;3;No;;;;;;;;;;;
+UKH16;E07000146;King's Lynn and West Norfolk;;No;151589;1527658500;3;No;;;;;;;;;;;
+UKH16;E07000147;North Norfolk;;No;103752;990397900;3;No;;;;;;;;;;;
+UKE22;E07000164;Hambleton;;No;90537;1311228200;3;No;;;;;;;;;;;
+UKE22;E07000166;Richmondshire;;No;53732;1318707000;3;No;;;;;;;;;;;
+UKE22;E07000167;Ryedale;;No;53486;1506593700;3;No;;;;;;;;;;;
+UKH14;E07000203;Mid Suffolk;;No;100014;871070700;3;No;;;;;;;;;;;
+UKG13;E07000221;Stratford-on-Avon;;No;122276;977869400;3;No;;;;;;;;;;;
+UKM91;S30000007;Scottish Borders;;No;114530;4742657000;3;No;;;;;;;;;;;
+UKM92;S30000016;Dumfries and Galloway;;Yes;149520;6676051800;3;No;;;;;;;;;;;
+UKM64;S30000039;Na h-Eileanan Siar (Western Isles);;Yes;26900;3268544000;3;No;;;;;;;;;;;
+UKM65;S30000040;Orkney Islands;;No;21850;1086210200;3;No;;;;;;;;;;;
+UKM66;S30000041;Shetland Islands;;No;23200;1656589900;3;No;;;;;;;;;;;
+UKL11;W06000001;Isle of Anglesey;;No;69723;749022700;3;No;;;;;;;;;;;
+UKL12;W06000002;Gwynedd;;No;123627;2622378700;3;No;;;;;;;;;;;
+UKL14;W06000008;Ceredigion;;No;74146;1805867600;3;No;;;;;;;;;;;
+UKL14;W06000009;Pembrokeshire;;No;123954;1650471900;3;No;;;;;;;;;;;
+UKL24;W06000023;Powys;;No;132160;5195456100;3;No;;;;;;;;;;;
+UKM61;S30000028;Ross and Cromarty;;Yes;55118;5299661500;3;No;;;;;;;;;;;
+UKM61;S30000029;Caithness and Sutherland;;Yes;38829;7940398800;3;No;;;;;;;;;;;
+UKM62;S30000031;Badenoch and Strathspey;;Yes;13777;2369813200;3;No;;;;;;;;;;;
+UKM62;S30000032;West Moray;;No;24140;1427752000;3;No;;;;;;;;;;;
+UKM63;S30000034;Arran and Cumbrae;;Yes;5860;453883600;3;No;;;;;;;;;;;
+UKM63;S30000035;Argyll and Bute Islands;;Yes;7182;2211523700;3;No;;;;;;;;;;;
+UKM63;S30000036;Argyll and Bute Mainland;;Yes;53527;4557396900;3;No;;;;;;;;;;;
+UKM63;S30000037;Lochaber;;No;19806;4719222800;3;No;;;;;;;;;;;
+UKM63;S30000038;Skye and Lochalsh;;Yes;13136;2798846200;3;No;;;;;;;;;;;
+UKN06;N09000003;Belfast;;Yes;339579;137751600;1;Yes;;;UK012C2;Yes;Belfast;UK012K1;No;Greater Belfast;UK012L2;No;Belfast Urban Area
+UKN0E;N09000007;Lisburn and Castlereagh;;Yes;141181;510566900;1;Yes;;;;;;UK012K1;No;Greater Belfast;UK012L2;No;Belfast Urban Area
+UKN0D;N09000001;Antrim and Newtownabbey;;Yes;141032;728373500;2;Yes;;;;;;;;;UK012L2;No;Belfast Urban Area
+UKN09;N09000011;Ards and North Down;;Yes;159593;566614500;2;Yes;;;;;;;;;UK012L2;No;Belfast Urban Area
+UKN0A;N09000005;Derry City and Strabane;;Yes;150142;1251561700;1;Yes;;;UK586C1;Yes;Derry & Strabane Local Government District;;;;;;
+UKN07;N09000002;Armagh City, Banbridge and Craigavon;;Yes;210260;1437432200;3;Yes;;;;;;;;;;;
+UKN0C;N09000004;Causeway Coast and Glens;;Yes;143525;1986058500;3;Yes;;;;;;;;;;;
+UKN0G;N09000006;Fermanagh and Omagh;;Yes;115799;3012884500;3;Yes;;;;;;;;;;;
+UKN0F;N09000008;Mid and East Antrim;;Yes;137821;1061633100;2;Yes;;;;;;;;;;;
+UKN0B;N09000009;Mid Ulster;;Yes;145389;1957795200;2;Yes;;;;;;;;;;;
+UKN08;N09000010;Newry, Mourne and Down;;Yes;177816;1682760000;3;Yes;;;;;;;;;;;

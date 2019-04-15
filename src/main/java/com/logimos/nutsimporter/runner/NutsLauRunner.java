@@ -21,7 +21,7 @@ import java.io.IOException;
 import static java.lang.System.currentTimeMillis;
 
 @Component
-@Order(1)
+//@Order(1)
 public class NutsLauRunner implements CommandLineRunner {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(NutsLauRunner.class);

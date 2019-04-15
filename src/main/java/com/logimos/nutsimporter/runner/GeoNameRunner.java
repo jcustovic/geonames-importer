@@ -20,8 +20,8 @@ import java.io.IOException;
 
 import static java.lang.System.currentTimeMillis;
 
-//@Component
-@Order(2)
+@Component
+//@Order(2)
 public class GeoNameRunner implements CommandLineRunner {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(GeoNameRunner.class);
